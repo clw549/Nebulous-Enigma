@@ -48,6 +48,8 @@ Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of g
 
 ### 6.1 Use case diagram
 
+![Use case diagram](Nebulous-Enigma-Use-cases.png)
+
 ### 6.2 Use case descriptions and interface sketch
 
 ### *Use Case 1: Make a story choice*
@@ -110,7 +112,7 @@ Consumer segment: Nebulous Enigma welcomes? Is for? Any type and all levels of g
 
 ![Use Case 2](https://i.ibb.co/TvC6jmQ/image-2024-09-27-142247730.png)
 
-### *Use Case 3: Load progress*
+### *Use Case 4: User creates/resolves discussion post*
 **Actor:** user/gamer\
 **Trigger:** The user navigates to the discussion page.\
 **Pre-conditions:** The user must have a profile before creating a post.\
@@ -174,9 +176,9 @@ Mock up ~ coming soon...
 2. As a player, I want to return to previous choices I've made so that I can experience other paths of the story. (Priority: 3, Estimation: (planning poker required))
 3. As a player, I want to read a story, so that I am entertained (Priority 2, Estimation: (planning poker required))
 4. As a player, I want to read multiple endings, so that I can learn more about the game's world (Priority 2, Estimation: (planning poker required))
-5. As a new gamer, I want to be able to post my questions about the game, so that I can understand how to navigate this game.
-6. As a gamer, I want to be able to resolve a topic I posted, so that others can find the solution, I too was looking for. 
-7. As a player, I want to be able to go back the story, so I can reread content (Priority: 4, Estimation: (pending))
+5. As a new gamer, I want to be able to post my questions about the game, so that I can understand how to navigate this game. (Priority 10, Estimation: 4 weeks)
+6. As a gamer, I want to be able to resolve a topic I posted, so that others can find the solution, I too was looking for. (Priority 10, Estimation: 1 day)
+7. As a player, I want to be able to go back to the story, so I can reread content (Priority: 4, Estimation: (pending))
 8. As a player, I want to be able to play without logging in, so I can get a fresh start (Priority: 3, Estimation: (pending))
 9. placeholder
 10. placeholder
