@@ -8,6 +8,7 @@ function LogIn() {
   const { setAuth } = useContext(AuthContext)
   const [username, setUsername] = useState()
   const [password, setPassword] = useState()
+  const [user, setUser] = useState(null); // Define state for the user
   const navigate = useNavigate()
 
   const handleSubmit = (e) => {
@@ -23,6 +24,13 @@ function LogIn() {
           setAuth({ username, password, accessToken })
           setUsername('')
           setPassword('')
+
+          // set the state of the user
+          setUser(result?.data)
+          // store the user in localStorage
+          result.testing = 1;
+          localStorage.setItem('user', JSON.stringify(result.testing)); // Ensure it's stringified
+          console.log(result.testing);
 
           navigate('/home')
         }
