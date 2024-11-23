@@ -15,7 +15,8 @@ function App() {
     token: null,
     user: null
   })
-  const [currentID, setCurrentID] = useState(localStorage.getItem('savedID'))
+  const [currentID, setCurrentID] = useState(localStorage.getItem('savedID') ? localStorage.getItem('savedID')
+                                                                             : 0)
 
   // useEffect is a built-in React hook that runs every time a page is rendered
   useEffect(() => {
