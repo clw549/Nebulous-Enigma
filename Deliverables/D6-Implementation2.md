@@ -34,6 +34,8 @@ Implemented by: Ciaran Wham
 
 Approved by: Levi Ly
 
+![Backtracking](./deliverable_images/d6_p2_backtracking.png)
+
 ## 2.3 Saving/Loading
 Requirement: If the player is logged into an account, their progress is saved as they play to a database server.
 
