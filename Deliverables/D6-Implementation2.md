@@ -58,33 +58,46 @@ Approved by: Levi Ly
 
 ![Navbar](https://i.ibb.co/zscXjNT/Screenshot-2024-11-23-at-9-31-11-PM.png)
 
+## 2.5 Music Button
+Requirement: While the player plays the game, they have the option to play and pause music. 
+
+Issue: https://github.com/clw549/Nebulous-Enigma/issues/29
+
+Pull request: https://github.com/kv422/Nebulous-Enigma/pull/4
+
+Implemented by: Kayden Vicenti
+
+Approved by: Kayden Vicenti
+
+![Music Button](./deliverable_images/music_button.png)
+
 # 3 Tests
 ## 3.1 Unittests
-1. This test was made with supertest
-2. Do keep in mind that this test file uses server.js and app.js files in the root directory, but this is where all the test code actually is:
+1. This test was made with super test
+2. Do keep in mind that this test file uses server.js and app.js files in the root directory, but this is where all the test code is:
    https://github.com/clw549/Nebulous-Enigma/tree/main/tests
-3. So this tests if the root page, aka the "/" page can recieve a button click from the user. This uses a mock button by using a boolean called ButtonPressed.
+3. So this tests if the root page, aka the "/" page, can receive a button click from the user. This uses a mock button by using a boolean called ButtonPressed.
    The code for this mock button is located here:
 
    Mock button: https://github.com/clw549/Nebulous-Enigma/blob/main/server.js
 
    Tests: https://github.com/clw549/Nebulous-Enigma/tree/main/tests
 
-4. Please keep in mind that both the automated tests are run at once. The one that passed is the button pressed one.
-   The one that failed is a user log in test, which will be discussed in more detail in 3.2.
+4. Please keep in mind that both automated tests are run at once. The one that passed is the button-pressed one.
+   The one that failed is a user login test, which will be discussed in more detail in 3.2.
    ![3.1 image](https://i.ibb.co/xmx5gW5/Screenshot-2024-11-23-162547.png)
 
 ## 3.2 Acceptance tests
-1. This test was made with supertest
-2. Do keep in mind that this test file uses server.js and app.js files in the root directory, but this is where all the test code actually is:
+1. This test was made with a super test
+2. Do keep in mind that this test file uses server.js and app.js files in the root directory, but this is where all the test code is:
    https://github.com/clw549/Nebulous-Enigma/tree/main/tests
 3. So this tests tests if a given username/password combination will work in playing the game.
    This uses a dummy username and a dummy password to test and see if it will move onto the next screen.
-   This test should fail because obviously the dummy username and password are not in the database.
+   This test should fail because the dummy username and password are not in the database.
 
    The code for this test is in the same file as 3.1: https://github.com/clw549/Nebulous-Enigma/tree/main/tests
 
-4. Please keep in mind that both the automated tests are run at once. The one that failed is the fake log in attempt.
+4. Please keep in mind that both automated tests are run at once. The one that failed was the fake login attempt.
    The error code it gives is 404 because it couldn't find the page that it would go to had the username and password been legit.
    ![3.2 image](https://i.ibb.co/xmx5gW5/Screenshot-2024-11-23-162547.png)
 
@@ -105,4 +118,4 @@ We adhered to the following practices when writing code:
 - Use whitespace to separate functions, behavior, etc. as appropriate. One line of whitespace is usually adequate. Use no more than two lines of whitespace between elements.
 
 # 6 Lessons learned
-We have learned a lot about React and MongoDB through this project. React has been a great tool for making our story modular, where each story prompt uses the same HTML/Javascript and simply alters the text displayed to the user. In this way, we made our website easy to add story pages to and have any number of options for each one. Additionally, React helps make the site more modification-friendly. MongoDB is the database system we used for our website. We learned both how to query the database and how to add documents (in our case, accounts) to it. We have also learned how to use local browser storage so that a user can be remembered and have information specific to them used within the website, such as character names being displayed in the story. We have also grown greatly as a team, showing how well we can work together and helping each other in pursuit of bettering ourselves. Overall, this project has been a great experience in learning teamwork and the systems necessary to run a website.
+We have learned a lot about React and MongoDB through this project. React has been a great tool for making our story modular, where each story prompt uses the same HTML/Javascript and simply alters the text displayed to the user. In this way, we made our website easy to add story pages to and have any number of options for each one. Additionally, React helps make the site more modification-friendly. MongoDB is the database system we used for our website. We learned both how to query the database and how to add documents (in our case, accounts) to it. We have also learned how to use local browser storage so that a user can be remembered and have information specific to them used within the website, such as character names being displayed in the story. Additionally, learning about different browsers and functions they support within their system was a challenge to overcome. Utilizing online resources to adjust our code to implement the music button was challenging due to the latter statement, it allowed us to be mindful of the different architecture each uses. We have also grown greatly as a team, showing how well we can work together and help each other in pursuit of bettering ourselves. Overall, this project has been a great experience in learning teamwork and the systems necessary to run a website.
